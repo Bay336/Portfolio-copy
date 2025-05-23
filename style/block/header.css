@@ -1,0 +1,133 @@
+        /*!=====   Header   =====*/
+.header {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    background-color: var(--body-background);
+}
+
+.nav {
+    max-width: 968px;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo, .nav-open {
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+    transition: all .3s;
+}
+
+.logo:hover,
+.nav-open:hover {
+    color: var(--hover-color);
+}
+
+.nav-open {
+    font-size: var(--normal-font-size);
+    cursor: pointer;
+}
+
+.nav-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+.nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--normal-font-size);
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+    text-transform: uppercase;
+    transition: all .3s;
+}
+.nav-link:hover {
+    color: var(--hover-color);
+}
+
+.nav-icon {
+    font-size: 20px;
+}
+
+.nav-close {               /*   крестик  */
+    position: absolute;
+    right: 21px;
+    bottom: 8px;
+    font-size: 24px;
+    color: var(--title-color);
+    transition: all .3s;
+}
+
+.nav-close:hover {
+    color: var(--hover-color);
+    cursor: pointer;
+}
+
+.nav-btns {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.change-theme {
+    font-size: var(--normal-font-size);
+    color: var(--title-color);
+    cursor: pointer;
+}
+.change-theme:hover {
+    color: var(--hover-color);
+}
+
+@media screen and (max-width: 767px) {
+    .nav-menu {
+        position: fixed;
+        bottom: -100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--body-background);
+        padding: 32px 24px 64px;
+        box-shadow: 0 2px 5px rgba(0,0,0,.5);
+        border-radius: 24px 24px 0 0;
+        transition: all .3s;
+    }
+
+}
+
+.show-menu {
+    bottom: 0;
+}
+               /*?   подсветка при скроле  */
+.scroll-header {
+    box-shadow: 0 2px 5px rgba(0,0,0, .5);
+}
+
+
+/* Для средних размеров */
+ @media screen and (min-width: 767px) {
+
+    .header {
+        top: 0;
+        bottom: initial;
+        padding: 0px 15px;
+    }
+
+    .nav {
+        height: 80px;
+    }
+    .nav .nav-icon,
+    .nav .nav-close,
+    .nav .nav-open {
+        display: none;    /* скрываем все элементы   */
+    }
+
+    .nav-list {
+        display: flex;
+        align-items: center;
+        column-gap: 12px;
+    }
+ }

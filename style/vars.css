@@ -1,0 +1,43 @@
+:root {
+  
+    --body-background:   #091e40;
+    --container-color:   #000040;
+    --title-color:       #f2f1f3;
+    --text-color:        #636a7a;
+    --hover-color:       #287fe2;
+    --scroll-bar-cover:  #716c89;
+    --scroll-thumb-color:#545167;
+    /*  линия  */
+    --section-title-line: -webkit-linear-gradient(left, rgba(0,0,0,0), rgb(255,255,255)rgba(0,0,0,0));
+
+/*  Font and typography  */
+--body-font: 'Poppins', sans-serif;
+--base-size: 1rem;             /*==            1rem = 16px   ==*/
+--body-line-height: 1.2;
+
+--h1-font-size: clamp(2rem, 2rem + 1.1vw, 3rem);
+--h2-font-size: clamp(1.875rem, 1.6rem + 1vw, 2.5rem);
+--h3-font-size: clamp(1.5rem, 1.4rem + 0.8vw, 2rem);
+--h4-font-size: clamp(1.2rem, 1.1rem + 0.6vw, 1.7rem);
+
+--normal-font-size: 0.9rem;
+--small-font-size: 0.7rem;
+
+/*  Font weight  */
+--font-regular: 400;
+--font-medium: 500;
+--font-semi-bold: 600;
+
+}
+
+/*===== Light theme style ( переменные для светлой темы )  =====*/
+body.light-theme {
+    --body-background:  #d85408;
+    --title-color:      #222222;
+    --text-color:       #333;
+    --container-color:  #f0821c;
+    --section-title-line: -webkit-linear-gradient(left, rgba(0,0,0,0), rgb(.1,.1,.1), rgba(0,0,0,0));
+    --scroll-bar-color: #e3e2e9;
+    --scroll-thumb-color: #d2cfc6;
+    --hover-color:       #b37321;
+}

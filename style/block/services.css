@@ -1,0 +1,115 @@
+      /*! ===  Services section =====  */
+.services-container {
+    grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+    gap: 25px;
+}
+
+.services-content {
+    position: relative;
+    background-color: var(--container-color);
+    padding: 65px 8px 20px 24px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0, .2);
+    transition: all .3s;
+}
+.services-content:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0, .5);
+}
+
+.services-icon {
+    display: block;
+    font-size: 24px;
+    color: var(--hover-color);
+    margin-bottom: 24px;
+}
+
+.services-title {
+    font-size: var(--normal-font-size);
+    margin-bottom: 16px;
+    font-weight: var(--font-medium);
+    line-height: 1.5rem;
+}
+
+.services-button {
+    color: var(--hover-color);
+    font-size: var(--small-font-size);
+    cursor: pointer;
+}
+
+.services-button .button-icon {
+    color: var(--hover-color);
+    margin-left: 5px;
+    padding-top: 3px;
+    opacity: 0.85;
+    transition: all .3s ease-in-out;
+}
+
+.services-button:hover .button-icon {
+    transform: translateX(4px);
+
+}
+
+.services-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0, .8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 15px;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+}
+.services-modal-content {
+    position: relative;
+    background-color: var(--container-color);
+    padding: 30px;
+    border-radius: 20px;
+}
+.services-modal-title {
+    font-size: var(--h4-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: 24px;
+}
+
+.services-modal-service {
+    row-gap: 16px;
+}
+.services-modal-block {
+    display: flex;
+    column-gap: 25px;
+}
+.services-modal-service {
+    display: flex;
+}
+
+.services-modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: var(--hover-color);
+    cursor: pointer;
+}
+
+.service-modal-icon {
+    color: var(--hover-color);
+    margin-right: 5px;
+    padding-top: 5px;
+    font-size: 14px;
+}
+
+.services-modal-image {
+    width: 150px;
+    margin: auto;
+}
+            /*?   Активация модального окна   */
+.active-modal {
+    opacity: 1;
+    visibility: visible;
+}

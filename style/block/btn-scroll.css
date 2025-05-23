@@ -1,0 +1,42 @@
+      /*! === Кнопка Scroll =====  */
+.scroll-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 2px rgba(59,56,235, 0.2);
+    z-index: 100;
+    transition: all 1.5s ease-in-out;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-100vh) rotate(180deg);
+}
+
+.scroll-top i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    color: dodgerblue;
+    transition: color 0.3s ease-in-out;
+}
+.scroll-top svg path {
+    fill: none;
+    stroke: dodgerblue;
+    stroke-width: 4;
+    transition: stroke 0.3s ease-in-out;
+}
+.scroll-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+    /*! === Активные Кнопки при Scroll =====  */
+.active-link {
+    color: var(--hover-color);
+}

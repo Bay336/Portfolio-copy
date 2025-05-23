@@ -1,0 +1,13 @@
+@import '/style/vars.css';
+@import '/style/global.css';
+
+
+@import '/style/block/header.css';
+@import '/style/block/home.css';
+@import '/style/block/about.css';
+@import '/style/block/skills.css';
+@import '/style/block/services.css';
+@import '/style/block/portfolio.css';
+@import '/style/block/contact.css';
+@import '/style/block/footer.css';
+@import '/style/block/btn-scroll.css';

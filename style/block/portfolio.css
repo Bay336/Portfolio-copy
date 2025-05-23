@@ -1,0 +1,57 @@
+     /*! ===  Portfolio section =====  */
+.portfolio-content {
+    padding: 35px;
+}
+
+.portfolio-img {
+    width: 500px;
+    border-radius: 20px;
+    justify-self: center;
+    margin-bottom: 35px;
+}
+.portfolio-data {
+    text-align: center;
+}
+
+.portfolio-title {
+    font-size: var(--h4-font-size);
+    margin-bottom: 8px;
+}
+
+.portfolio-description {
+    margin-bottom: 16px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    content: '';
+    position: absolute;
+}
+
+.swiper-portfolio-icon {
+    font-size: 32px;
+    color: var(--hover-color);
+}
+
+.swipper-button-next {
+    right: -8px;
+}
+.swipper-button-prev {
+    left: -8px;
+}
+
+.swiper-pagination {
+    transform: translate3d(0, 10px, 0) !important;
+}
+.swiper-pagination-bullet {
+width: 15px !important;
+height: 15px !important;
+}
+.swiper-pagination-bullet-active {
+    background: var(--hover-color);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    display: none;
+}
